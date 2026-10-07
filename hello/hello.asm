@@ -6,7 +6,7 @@ section .data ; data used by program
 	first_msg db "Hello, world!", 10
 
 	; equ: defines constant
-	; $: current data address??
+	; $: current assembly position (??)
 	first_msg_len equ $ - first_msg
 
 	second_msg db "I am learning assembly.", 10
