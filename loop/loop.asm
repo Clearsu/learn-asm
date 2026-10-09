@@ -10,7 +10,7 @@ _start:
 .loop:
     mov rax, r12
     add al, '1'
-    mov [digit], al
+    mov [digit], al ; al: 8bit register, no need to specify size (like byte)
     mov byte [digit + 1], 10 ; new line
 
     mov rax, 1
